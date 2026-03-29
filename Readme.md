@@ -84,3 +84,13 @@ This provides a **Swagger UI** where you can test APIs easily.
 {
   "text": "create ubuntu server with ssh"
 }
+
+## 👨‍💻 Authors
+
+Developed by:
+
+- 🌟 Nisarg  
+- 🌟 Sahil  
+- 🌟 Ankit Kumar  
+
+> Built with passion for cloud automation and AI 🚀
