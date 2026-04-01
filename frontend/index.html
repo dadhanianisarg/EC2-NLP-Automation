@@ -146,7 +146,7 @@
 
   <main>
 
-    ```
+    
     <div class="input-card">
       <textarea id="commandInput"
         placeholder="Example: Create a low-cost Ubuntu EC2 in Mumbai with SSH access"></textarea>
@@ -188,7 +188,7 @@
     </div>
 
     <p class="footer">Connected to FastAPI Backend 🚀</p>
-    ```
+    
 
   </main>
 
@@ -209,7 +209,7 @@
       loading.style.display = "block";
 
       try {
-        const response = await fetch("https://ec2-nlp-automation.onrender.com", {
+        const response = await fetch("https://ec2-nlp-automation.onrender.com/create", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
