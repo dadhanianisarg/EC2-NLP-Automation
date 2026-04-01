@@ -146,49 +146,49 @@
 
   <main>
 
-```
-<div class="input-card">
-  <textarea id="commandInput"
-    placeholder="Example: Create a low-cost Ubuntu EC2 in Mumbai with SSH access"></textarea>
+    ```
+    <div class="input-card">
+      <textarea id="commandInput"
+        placeholder="Example: Create a low-cost Ubuntu EC2 in Mumbai with SSH access"></textarea>
 
-  <button id="createBtn" class="btn" onclick="createInstance()">🚀 Create Instance</button>
+      <button id="createBtn" class="btn" onclick="createInstance()">🚀 Create Instance</button>
 
-  <div id="loading" class="loading">⏳ Creating instance...</div>
-</div>
-
-<div id="outputCard" class="output-card">
-  <div id="outputHeader" class="output-header">Instance Created Successfully</div>
-
-  <div class="output-body">
-    <div class="detail">
-      <label>Instance Type</label>
-      <p id="instanceType">-</p>
+      <div id="loading" class="loading">⏳ Creating instance...</div>
     </div>
 
-    <div class="detail">
-      <label>Region</label>
-      <p id="region">-</p>
+    <div id="outputCard" class="output-card">
+      <div id="outputHeader" class="output-header">Instance Created Successfully</div>
+
+      <div class="output-body">
+        <div class="detail">
+          <label>Instance Type</label>
+          <p id="instanceType">-</p>
+        </div>
+
+        <div class="detail">
+          <label>Region</label>
+          <p id="region">-</p>
+        </div>
+
+        <div class="detail">
+          <label>Operating System</label>
+          <p id="os">-</p>
+        </div>
+
+        <div class="detail">
+          <label>Status</label>
+          <p id="status">-</p>
+        </div>
+
+        <div class="detail">
+          <label>Instance ID</label>
+          <p id="instanceId">-</p>
+        </div>
+      </div>
     </div>
 
-    <div class="detail">
-      <label>Operating System</label>
-      <p id="os">-</p>
-    </div>
-
-    <div class="detail">
-      <label>Status</label>
-      <p id="status">-</p>
-    </div>
-
-    <div class="detail">
-      <label>Instance ID</label>
-      <p id="instanceId">-</p>
-    </div>
-  </div>
-</div>
-
-<p class="footer">Connected to FastAPI Backend 🚀</p>
-```
+    <p class="footer">Connected to FastAPI Backend 🚀</p>
+    ```
 
   </main>
 
@@ -209,7 +209,7 @@
       loading.style.display = "block";
 
       try {
-        const response = await fetch("http://127.0.0.1:8000/create", {
+        const response = await fetch("https://ec2-nlp-automation.onrender.com", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
