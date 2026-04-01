@@ -13,5 +13,5 @@ AWS_SECRET_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
 AWS_REGION = os.getenv("AWS_DEFAULT_REGION") or "ap-south-1"
 
 print("CONFIG LOADED")
-print("KEY:", AWS_ACCESS_KEY)
+# print("KEY:", AWS_ACCESS_KEY)
 print("REGION:", AWS_REGION)
